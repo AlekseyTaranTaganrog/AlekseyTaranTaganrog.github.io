@@ -27,7 +27,7 @@ A:hover {
     padding: 20px;
     margin-bottom: 10px;
     height: 200px;
-    border: 3px solid #000;
+    //    border: 3px solid #000;
     background: linear-gradient(to bottom right, black, white);
 
     .textheader {
@@ -78,45 +78,34 @@ A:hover {
             left: -15px;
             border: 2px solid #000;
             box-sizing: border-box;
-        } //        @media (max-width: 450px) {
-        //            h1 {
-        //                font-size: 28px;
-        //            }
-        //            h1:before {
-        //                width: 20px;
-        //                height: 20px;
-        //                top: -20px;
-        //                left: -20px;
-        //            }
-        //        }
+        }
+        @media (max-width: 450px) {
+            h1 {
+                font-size: 28px;
+            }
+            h1:before {
+                width: 20px;
+                height: 20px;
+                top: -20px;
+                left: -20px;
+            }
+        }
     }
     blockquote {
         margin: 20px 30px 20px 15px;
-        padding-left: 25px;
-//        padding-bottom: 15px;
+        padding-left: 25px; //        padding-bottom: 15px;
         border-left: 2px solid #000;
         h3 {
             font-family: 'Merriweather', serif;
             position: relative;
             color: #000;
             font-size: 16px;
-            
+
         }
     }
 }
 
-.sidebar {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border: 1px solid #000;
-    width: 29%;
-    background: #ECF5E4;
-    float: left;
 
-
-}
 
 .footer {
     border: 3px solid #000;
@@ -125,34 +114,44 @@ A:hover {
     margin-top: 20px;
 }
 
-.round {
-    border-radius: 100px;
-    border: 1px solid green;
-    box-shadow: 0 0 7px #000;
-}
 
-.round:hover {
-    border-radius: 100px;
-    border: 1px solid green;
-    box-shadow: 0 0 7px red;
-}
 
 .content-wrapper {
     display: flex;
     justify-content: flex-start;
     flex: 1;
-
+    .sidebar {
+        margin-right: 30px;
+    }
 }
 
-.content-wrapper .sidebar {
-    margin-right: 30px;
-}
+
 
 
 .sidebar {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+//    border: 1px solid #000;
+    width: 29%;
+    background: #fff;
+    float: left;
+    .round {
+        border-radius: 100px;
+        border: 1px solid green;
+        box-shadow: 0 0 7px #000;
+    }
+
+    .round:hover {
+        border-radius: 100px;
+        border: 1px solid green;
+        box-shadow: 0 0 7px red;
+    }
+
     .block {
         padding: 20px;
-        border: 1px solid #ccc;
+//        border: 1px solid #ccc;
         margin-bottom: 20px;
         display: inline-block;
         .poster {
